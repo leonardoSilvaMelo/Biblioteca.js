@@ -61,7 +61,7 @@ header h1 span{
 
 .home{
     background: rgb(131,58,180);
-    background: linear-gradient(315deg, rgba(131,58,180,1) 0%, rgba(198,29,253,1) 20%, rgba(252,176,69,1) 88%);
+    background: linear-gradient(-315deg, rgba(131,58,180,1) 0%, rgba(198,29,253,1) 20%, rgba(252,176,69,1) 88%);
     padding: 10rem;
     height: 30vh;
     display: flex;
@@ -88,28 +88,95 @@ header h1 span{
 
 
 
-.section1{
-    padding: 10rem;
+.content{
+    padding: 5rem;
 }
 
-.section1 h2{
+.content h2{
     text-align: center;
+    margin: 2rem auto;
+}
+
+.cards div img{
+    height: 5rem;
+    width: auto;
     margin: 10px auto;
 }
 
 .cards{
-    background-color: aquamarine;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: center;
+    gap: 2rem;
 }
 
 .cards div p{
     text-align: center;
-    
+    font-weight: 500;
 }
 
 .cards div{
-    background-color: rgb(175, 88, 255);
+    background-color: transparent;
     padding: 2rem;
     width: 10rem;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: rgba(198,29,253,1);
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(131,58,180,1);
+}
+
+.cards div:hover{
+    box-shadow: 10px 10px 20px rgba(131,58,180,1);
+}
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 5rem;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+footer h1 span{
+    color: goldenrod;
+}
+
+.div-footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    margin: 20px auto;
+    width: 85%;
+}
+
+.div-footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-footer2 h3{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.div-footer2 div ul{
+    display: flex;
+}
+
+.div-footer2 div ul li{
+    margin-right: 1rem;
+}
+
+.div-footer2 div ul li i{
+    font-size: 3.5rem;
 }
